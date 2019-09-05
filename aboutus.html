@@ -11,7 +11,13 @@
 </head>
 
 <body>
-
+  <div class="head">
+    <a href="index.html">Home</a>
+    <a href="aboutus.html">About</a>
+    <a href="simon.html">Simon Lervad</a>
+    <a href="anders.html">Anders Dall</a>
+    <a href="jonatan">Jonatan</a>
+  </div>
 <h1>About Us</h1>
 
 <h3>Who are we?</h3>
@@ -31,7 +37,8 @@
 <button onclick="mb()" type="button">Indtast antal mb</button>
 <br>
 <p id="demo"></p>
-<br>
+
+<p id="demo1"></p>
 <br>
 
 
@@ -42,9 +49,22 @@
 function mb(){
   let ugentligMb = Number(prompt('Please enter expected use of mb'));
   let prisMb = 100;
+  let ugentligPris = ugentligMb * prisMb;
+document.getElementById("demo").innerHTML = ('Price for' + ' ' + ugentligMb + 'mb' + ' ' + 'is:' + ' ' + (ugentligPris) + ' ' + 'dkr.');
 
-document.getElementById("demo").innerHTML = ('Price for' + ' ' + ugentligMb + 'mb' + ' ' + 'is:' + ' ' + (ugentligMb*prisMb) + ' ' + 'dkr.');
+if (ugentligPris <= 5000)
+    document.getElementById("demo1").innerHTML = ('You will overcome this.');
+  else if (ugentligPris <= 10000)
+    document.getElementById("demo1").innerHTML = ('Now You will be in trouble.');
+  else if (ugentligPris <= 500000)
+    document.getElementById("demo1").innerHTML = ('You should stop studylife and get a real job.');
+  else
+    document.getElementById("demo1").innerHTML = ('You will be in debt for the rest of Your life...');
+
 }
+
+
+
 
 </script>
 
