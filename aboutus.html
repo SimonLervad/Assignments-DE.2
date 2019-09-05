@@ -16,12 +16,37 @@
 
 <h3>Who are we?</h3>
 
-<h4>We are web developers<h4>
+<h3>We are web developers<h3>
+
+<h5>What can we do?</h5>
+
+<h5>We code javascript as in the example below:</h5>
+
+<p>Wireless data in Greenland is very expensive with Oister.</p>
+<br>
+<p>Type in the amount of data (mb) You expect to use on Your stay in Greenland</p>
+<br>
+<p>(Price from Oister on 05.09.2019)</p>
+<br>
+<button onclick="mb()" type="button">Indtast antal mb</button>
+<br>
+<p id="demo"></p>
+<br>
+<br>
 
 
 <a href="index.html">Home</a>
 
 
+<script type="text/javascript">
+function mb(){
+  let dagligMb = Number(prompt('Please enter daily use of mb'));
+    let prisMb = 100;
+
+  document.getElementById("demo").innerHTML = ('Price for' + ' ' + dagligMb + 'mb' + ' ' + 'is:' + ' ' + (dagligMb*prisMb) + ' ' + 'dkr.');
+}
+
+</script>
 
 </body>
 </html>
