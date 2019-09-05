@@ -24,9 +24,9 @@
 
 <p>Wireless data in Greenland is very expensive with Oister.</p>
 <br>
-<p>Type in the amount of data (mb) You expect to use on Your stay in Greenland</p>
+<p>Type in the amount of data (mb) You expect to use if You should stay one week in Greenland</p>
 <br>
-<p>(Price from Oister on 05.09.2019)</p>
+<p>(Price from Oister as seen on 05.09.2019)</p>
 <br>
 <button onclick="mb()" type="button">Indtast antal mb</button>
 <br>
@@ -40,10 +40,10 @@
 
 <script type="text/javascript">
 function mb(){
-  let dagligMb = Number(prompt('Please enter daily use of mb'));
-    let prisMb = 100;
+  let ugentligMb = Number(prompt('Please enter expected use of mb'));
+  let prisMb = 100;
 
-  document.getElementById("demo").innerHTML = ('Price for' + ' ' + dagligMb + 'mb' + ' ' + 'is:' + ' ' + (dagligMb*prisMb) + ' ' + 'dkr.');
+document.getElementById("demo").innerHTML = ('Price for' + ' ' + ugentligMb + 'mb' + ' ' + 'is:' + ' ' + (ugentligMb*prisMb) + ' ' + 'dkr.');
 }
 
 </script>
