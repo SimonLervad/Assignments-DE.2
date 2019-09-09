@@ -19,54 +19,27 @@
     <a href="jonatan">Jonatan</a>
   </div>
   <div class="content">
-    <h1>About Us</h1>
-
-<h3>Who are we?</h3>
-
-<h3>We are web developers<h3>
-
-<h5>What can we do?</h5>
-
-<h5>We code javascript as in the example below:</h5>
-
-<p>Wireless data in Greenland is very expensive with Oister.</p>
-<br>
-<p>Type in the amount of data (mb) You expect to use if You should stay one week in Greenland</p>
-<br>
-<p>(Price from Oister as seen on 05.09.2019)</p>
-<br>
-<button onclick="mb()" type="button">Indtast antal mb</button>
-<br>
-<p id="demo"></p>
-
-<p id="demo1"></p>
-<br>
-
-
-<a href="index.html">Home</a>
+    <h1>About Git</h1>
+    <h2>
+      Here you will find a list, listing the most important codes for learning Git
+    </h2>
+    <table>
+      <tr>
+        <th>Git Commands</th><th>Description</th>
+      </tr>
+      <tr>
+        <td>Git init</td><td>initiating git - starts in the folder your git is pointing at</td>
+      </tr>
+      <tr>
+        <td>git cd</td><td>Change directory - changes git to another folder</td>
+      </tr>
+      <tr>
+        <td>mkdir</td><td>Make directory - Is not a git command, creates a directory in your folder.</td>
+      </tr>
+      <tr>
+        <td>git checkout .--</td><td></td>
+      </tr>
+    </table>
   </div>
-<script type="text/javascript">
-function mb(){
-  let ugentligMb = Number(prompt('Please enter expected use of mb'));
-  let prisMb = 100;
-  let ugentligPris = ugentligMb * prisMb;
-document.getElementById("demo").innerHTML = ('Price for' + ' ' + ugentligMb + 'mb' + ' ' + 'is:' + ' ' + (ugentligPris) + ' ' + 'dkr.');
-
-if (ugentligPris <= 5000)
-    document.getElementById("demo1").innerHTML = ('You will overcome this.');
-  else if (ugentligPris <= 10000)
-    document.getElementById("demo1").innerHTML = ('Now You will be in trouble.');
-  else if (ugentligPris <= 500000)
-    document.getElementById("demo1").innerHTML = ('You should stop studylife and get a real job.');
-  else
-    document.getElementById("demo1").innerHTML = ('You will be in debt for the rest of Your life...');
-
-}
-
-
-
-
-</script>
-
 </body>
 </html>
