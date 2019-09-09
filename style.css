@@ -8,23 +8,23 @@ body {
 }
 h1 {
 	font-size:50px;
-	color:red;
+	color:#fff;
 	padding:30px;
 	background-color:#262626;
 	text-align:center;
 }
-h1:hover {
-	color:#262626;
-	background-color:red;
+/*	color:#262626;
+	background-color:#fff;
 	transition-duration: 0.5s;
-}
+}*/
 p {
 	font-size:20px;
-	color:green;
+	color:#fff;
 	padding:0;
 	margin:0;
 	max-width:200px;
 }
+table{color:#fff}
 div {
 	width:100%;
 	padding:25px;
@@ -37,12 +37,41 @@ div {
 	height: 100%;
 	width: 300px;
 	top: 0;
+	left:0;
+	box-sizing: border-box;
+	transition: left .5s;
+}
+
+.head.closed {
+
+	background-color: #a80303;
+	float: left;
+	position: fixed;
+	height: 100%;
+	width: 300px;
+	top: 0;
+	left:-300px;
 	box-sizing: border-box;
 }
+
 .content {
 	background-color: #262626;
-  width: 80%;
-  margin: 0 50px 0 300px;
+width: 100%;
+box-sizing: border-box;
+margin: 0 0px 0 0px;
+padding: 0 50px 100px 350px;
+color: #fff;
+transition: padding .5s;
+
+}
+
+.content.closed {
+	background-color: #262626;
+width: 100%;
+box-sizing: border-box;
+margin: 0 0px 0 0px;
+padding: 0px 100px 100px 100px;
+color: #fff;
 }
 .head a {
 	color: #f2f2f2;
@@ -56,3 +85,17 @@ img {
 	width:100%;
 	border:1px solid red;
 }
+
+.menubtn{
+	width: 40px;
+    position: absolute;
+    right: 40px;
+	cursor:pointer;
+border:none;}
+
+	.menubtn.open{
+		width: 40px;
+	    position: absolute;
+	    left: 40px;
+			    top: 22px;
+		cursor:pointer;}
