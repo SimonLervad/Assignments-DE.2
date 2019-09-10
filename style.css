@@ -49,10 +49,19 @@ td:nth-child(1) {
 td:nth-child(2) {
 	width:800px;
 }
+.border-bottom {
+	border-bottom:1px solid #f2f2f2;
+}
 div {
 	width:100%;
 	padding:25px;
 	margin:0;
+}
+.table-box {
+	width:100%;
+	display:flex;
+	justify-content: space-around;
+	flex-wrap:wrap;
 }
 .head {
 	background-color: #a80303;
